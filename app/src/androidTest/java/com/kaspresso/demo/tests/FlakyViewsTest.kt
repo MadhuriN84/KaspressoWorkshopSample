@@ -1,13 +1,13 @@
-package com.eakurnikov.kaspressosample.flaky
+package com.kaspresso.demo.tests
 
 import android.Manifest
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.rule.ActivityTestRule
 import androidx.test.rule.GrantPermissionRule
 import com.eakurnikov.kaspressosample.R
-import com.eakurnikov.kaspressosample.flaky.screen.FlakyScreen
-import com.eakurnikov.kaspressosample.simple.screen.MainScreen
-import com.eakurnikov.kaspressosample.simple.screen.SecondScreen
+import com.kaspresso.demo.screens.FlakyScreen
+import com.kaspresso.demo.screens.MainScreen
+import com.kaspresso.demo.screens.SecondScreen
 import com.eakurnikov.kaspressosample.view.main.MainActivity
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import org.junit.Rule
@@ -16,7 +16,7 @@ import org.junit.runner.RunWith
 import java.util.concurrent.TimeUnit
 
 /**
- * Created by eakurnikov on 2019-12-18
+ * Created by Madhuri on 2020-12-13
  */
 @RunWith(AndroidJUnit4::class)
 class FlakyViewsTest : TestCase() {
@@ -63,14 +63,14 @@ class FlakyViewsTest : TestCase() {
             }
 
             step("Check flaky text view is visible") {
-                FlakyScreen{
+                FlakyScreen {
 
-                    compose(timeoutMs = 5000){
-                        or(flakyTextView){
+                    compose(timeoutMs = 5000) {
+                        or(flakyTextView) {
                             isVisible()
                             hasText("2")
                         }
-                        or(flakyTextView){
+                        or(flakyTextView) {
                             isVisible()
                             hasText("Flaky TextView")
                         }

@@ -1,11 +1,11 @@
-package com.eakurnikov.kaspressosample.simple.screen
+package com.kaspresso.demo.screens
 
 import com.agoda.kakao.screen.Screen
 import com.agoda.kakao.text.KTextView
 import com.eakurnikov.kaspressosample.R
 
 /**
- * Created by eakurnikov on 2019-12-18
+ *Created by Madhuri on 2020-12-13
  */
 object SecondScreen : Screen<SecondScreen>() {
 

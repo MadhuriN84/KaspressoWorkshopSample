@@ -1,13 +1,13 @@
-package com.eakurnikov.kaspressosample.simple.scenario
+package com.kaspresso.demo.utils.scenario
 
 import com.eakurnikov.kaspressosample.R
-import com.eakurnikov.kaspressosample.simple.screen.SecondScreen
-import com.eakurnikov.kaspressosample.simple.screen.SimpleScreen
+import com.kaspresso.demo.screens.SecondScreen
+import com.kaspresso.demo.screens.SimpleScreen
 import com.kaspersky.kaspresso.testcases.api.scenario.Scenario
 import com.kaspersky.kaspresso.testcases.core.testcontext.TestContext
 
 /**
- * Created by eakurnikov on 2019-12-18
+ * Created by Madhuri on 2020-12-13
  */
 class TypeTextAndCheckTitleScenario(
     private val text: String

@@ -1,4 +1,4 @@
-package com.eakurnikov.kaspressosample.simple.matchers
+package com.kaspresso.demo.utils.matchers
 
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
@@ -9,7 +9,7 @@ import org.hamcrest.Description
 import org.hamcrest.TypeSafeMatcher
 
 /**
- * Created by eakurnikov on 2019-12-18
+ *Created by Madhuri on 2020-12-13
  */
 class BackgroundColorMatcher(
     @ColorRes private val colorRes: Int = -1,

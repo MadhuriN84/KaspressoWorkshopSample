@@ -1,4 +1,4 @@
-package com.eakurnikov.kaspressosample.simple.interceptors
+package com.kaspresso.demo.utils.interceptors
 
 import android.util.Log
 import android.view.View

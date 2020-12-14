@@ -1,13 +1,13 @@
-package com.eakurnikov.kaspressosample.simple
+package com.kaspresso.demo.tests
 
 import android.Manifest
 import androidx.test.rule.ActivityTestRule
 import androidx.test.rule.GrantPermissionRule
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.eakurnikov.kaspressosample.R
-import com.eakurnikov.kaspressosample.simple.matchers.ViewSizeMatcher.Companion.withWidthAndHeight
-import com.eakurnikov.kaspressosample.simple.scenario.TypeTextAndCheckTitleScenario
-import com.eakurnikov.kaspressosample.simple.screen.MainScreen
+import com.kaspresso.demo.utils.matchers.ViewSizeMatcher.Companion.withWidthAndHeight
+import com.kaspresso.demo.utils.scenario.TypeTextAndCheckTitleScenario
+import com.kaspresso.demo.screens.MainScreen
 import com.eakurnikov.kaspressosample.view.main.MainActivity
 import com.kaspersky.kaspresso.testcases.api.testcase.TestCase
 import org.hamcrest.Matchers
@@ -16,7 +16,7 @@ import org.junit.Test
 import org.junit.runner.RunWith
 
 /**
- * Created by eakurnikov on 2019-12-18
+ * Created by Madhuri on 2020-12-13
  */
 @RunWith(AndroidJUnit4::class)
 class PerfectKaspressoTest : TestCase() {

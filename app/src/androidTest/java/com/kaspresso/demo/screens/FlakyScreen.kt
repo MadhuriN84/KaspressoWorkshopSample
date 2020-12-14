@@ -1,4 +1,4 @@
-package com.eakurnikov.kaspressosample.flaky.screen
+package com.kaspresso.demo.screens
 
 import com.agoda.kakao.screen.Screen
 import com.agoda.kakao.scroll.KScrollView
@@ -6,7 +6,7 @@ import com.agoda.kakao.text.KButton
 import com.eakurnikov.kaspressosample.R
 
 /**
- * Created by eakurnikov on 2019-12-18
+ * Created by Madhuri on 2020-12-13
  */
 object FlakyScreen : Screen<FlakyScreen>() {
 
