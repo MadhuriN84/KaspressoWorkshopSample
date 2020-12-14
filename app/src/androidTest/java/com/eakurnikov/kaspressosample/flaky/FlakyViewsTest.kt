@@ -63,12 +63,21 @@ class FlakyViewsTest : TestCase() {
             }
 
             step("Check flaky text view is visible") {
-                FlakyScreen {
-                    flakyTextView {
-                        flakySafely(timeoutMs = 3000) { isVisible() }
-                        hasText(R.string.flaky_textview_text_start)
+                FlakyScreen{
+
+                    compose(timeoutMs = 5000){
+                        or(flakyTextView){
+                            isVisible()
+                            hasText("2")
+                        }
+                        or(flakyTextView){
+                            isVisible()
+                            hasText("Flaky TextView")
+                        }
+
                     }
                 }
+
             }
 
             step("Check flaky text view's text") {

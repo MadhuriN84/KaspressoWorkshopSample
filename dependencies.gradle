@@ -27,7 +27,7 @@ ext.versions = [
 
         junit                : "4.12",
         extJunit             : "1.1.0",
-        espresso             : '3.2.0',
-        kaspresso            : "1.0.1",
+        espresso             : '3.3.0',
+        kaspresso            : "1.1.0",
         testingSupportLibrary: '1.1.0-alpha4'
 ]

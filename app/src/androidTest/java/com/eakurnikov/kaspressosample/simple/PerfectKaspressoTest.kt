@@ -65,4 +65,5 @@ class PerfectKaspressoTest : TestCase() {
             scenario(TypeTextAndCheckTitleScenario(""))
         }
     }
+
 }
